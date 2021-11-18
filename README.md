@@ -4,9 +4,6 @@ An end to end machine learning project to predict if an applicant would be given
 
 # Overview
 
-
-Description
-
 About Company
 
 Ajiboye and Sons Finance company deals in all home loans and have presence across all urban, semi urban and rural areas. Before a customer can apply for a house loan, the company needs to validate the customer's eligibility status for loan.
