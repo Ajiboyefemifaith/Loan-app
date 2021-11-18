@@ -46,6 +46,10 @@ LoanAmount				Loan amount in thousands
 
 Loan_Amount_Term			Term of loan in months
 
+# Results
+
+The logistic regression model was built using 10 features with the highest feature importance score and an acuracy of 83% was gotten.  
+
 Credit_History				credit history meets guidelines
 
 Property_Area				Urban/ Semi Urban/ Rural
