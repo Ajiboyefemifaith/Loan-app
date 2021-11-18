@@ -1,5 +1,5 @@
 # Loan-app
-An end to end machine learning project to predict if an applicant would be given a house loan
+An end to end machine learning project to predict the eligibility status of a home loan applicant.
 
 
 # Overview
