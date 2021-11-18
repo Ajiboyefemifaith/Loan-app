@@ -1,0 +1,159 @@
+<!Doctype html>
+
+<html>
+
+<head>
+
+<title>Loan Status</title>
+
+<style>
+
+body {
+	background-color:rgb(21, 208, 221);
+}
+
+
+form {
+text-align :center;
+}
+input {
+width: 30%;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+  width: 10%
+}
+
+select {
+width: 30%;
+}
+
+label {
+  font-size: 14px;
+  width: 100px;
+  text-align: right;
+}​
+
+
+body {
+  background-image: url('h.jpeg');
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<center><h1>Home Loan Approval Status</h1></center>
+
+<form action="{{ url_for('predict')}}" method="post">
+
+<label for = "coa">Co-Applicant Income</label>
+<input type = 'text' id = 'coa', name = 'CoapplicantIncome', required = 'required', placeholder = 'Enter Coapplicant Income...' />
+<br></br>
+
+<label for='ch'>Credit History</label>
+<select id='ch' name='Credit_History'>
+	<option value=1>Yes</option>
+	<option value=0>No</option>
+</select>
+<br></br>
+
+<label for = "ao">Applicant Income</label>
+<input type = 'text' id = 'ao', name = 'ApplicantIncome', required = 'required', placeholder = 'Enter Applicant Income...' />
+<br></br>
+
+<label for = "la">Loan Amount</label>
+<input type = 'text' id = 'la', name = 'LoanAmount', required = 'required', placeholder = 'Enter Loan Amount...' />
+<br></br>
+
+
+<label for='edu'>Education</label>
+<select id='edu' name='Education',placeholder='Select '>
+	<option value=1>Not Graduate</option>
+	<option value=0>Graduate</option>
+</select>
+<br></br>
+
+<label for='mar'>Married</label>
+<select id='mar' name='Married'>
+	<option value=1>Yes</option>
+	<option value=0>No</option>
+</select>
+<br></br>
+
+<label for = "lmt">Loan_Amount_Term</label>
+<input type = 'text' id = 'lmt', name = 'Loan_Amount_Term', required = 'required', placeholder = 'Enter Loan_Amount_Term...' />
+<br></br>
+
+<label for="ppa">Property Area</label>
+<select id="ppa" name="Property_Area"?>
+	<option value=2>Urban</option>
+	<option value=0>Rural</option>
+	<option value=1>Semiurban</option>
+
+</select>
+
+<br></br>
+
+<label for='dep'>Dependents</label>
+<select id='dep' name='Dependents'>
+	<option value=0>0</option>
+	<option value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3+</option>
+</select>
+
+<br></br>
+
+<label for='gn'>Gender</label>
+<select id='gn' name='Gender'>
+	<option value=1>Male</option>
+	<option value=0>Female</option>
+</select>
+
+<br></br>
+
+
+<button type="submit" >Check Status</button>
+
+</form>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
